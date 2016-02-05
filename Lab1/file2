@@ -1,0 +1,66 @@
+  PID TTY          TIME CMD
+ 7895 pts/0    00:00:00 bash
+ 7986 pts/0    00:00:00 ps
+    1  ls
+    2  cd examples.destop
+    3  cat examples.destop
+    4  cat examples.desktop 
+    5  ls
+    6  cd ..
+    7  ls
+    8  cd taba238/
+    9  echo "hello world"
+   10  pwd
+   11  ls
+   12  mkdir CS216
+   13  ls
+   14  ls -a
+   15  ls -l
+   16  man ls
+   17  ls
+   18  cd CS216/
+   19  ls
+   20  mkdir Example
+   21  ls
+   22  cd Example/
+   23  pwd
+   24  ls
+   25  cd ..
+   26  ls
+   27  mkdir Programs
+   28  ls
+   29  mkdir Homework
+   30  exit
+   31  ls
+   32  cd Documents/
+   33  ls
+   34  cd ..
+   35  ls
+   36  cd taba238/
+   37  ls
+   38  cat examples.desktop
+   39  ls
+   40  history
+   41  clear
+   42  man echo
+   43  man cat
+   44  ls
+   45  man cat
+   46  cat examples.desktop -e
+   47  clear
+   48  ls
+   49  cd CS216/
+   50  ls
+   51  mkdir Lab1
+   52  cd Lab1/
+   53  ls
+   54  pwd
+   55  pwd > file1
+   56  ls
+   57  cat file1
+   58  echo shell
+   59  echo $shell
+   60  echo $SHELL
+   61  ps > file2
+   62  cat file2
+   63  history >> file2
