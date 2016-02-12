@@ -43,18 +43,37 @@ BasketList::BasketList() :
 
 void BasketList::insertBasket(int eggs)
 {
-   Basket *currPtr = head;
-   Basket *prevPtr = NULL;
-   Basket *newBasketPtr;      //points to a new basket
-   
-   while(currPtr != NULL && eggs > currPtr->egg_num)
-   {
-      prevPtr = currPtr;
-      currPtr = currPtr->nextBasket;
-   } 
+   Basket* currBasket = head;
+   Basket* prevBasket = NULL;
 
-   newBasketPtr = new Basket(eggs, currPtr);
-   prevPtr->nextBasket = newBasketPtr;
+	//if the list is uninitialized (the current basket is null),
+   if (currBasket == NULL)
+   {
+	//the head should be initialized as a new basket, with a NULL next pointer. 
+	head = new Basket(eggs, prevBasket);
+	//we're done here!
+	return;
+   }
+ 	//while the current basket is NOT null, and the given number of eggs is
+	//greater than the current baskets, 
+   while (currBasket != NULL && eggs > currBasket->egg_num)
+   {
+	//make the previous basket the current basket (go forwards)
+      prevBasket = currBasket;
+	//make the current basket the next basket and look again.
+      currBasket = currBasket->nextBasket;
+   }
+ 
+ 
+	//if the list was initialzed when inserting (i.e. function is still going),
+	//make a new basket at the location it belongs (before the current basket).
+	Basket* newBasketPtr = new Basket(eggs, currBasket);
+	//don't forget to specify that the previous basket's next pointer is the new one,
+	//that is, if there is a previous!!
+	if (prevBasket != NULL)
+	{
+		prevBasket->nextBasket = newBasketPtr;
+	}
 }
 
 // create a backet list which contains INITIALBASKETS baskets
