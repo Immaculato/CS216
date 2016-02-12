@@ -45,6 +45,7 @@ class BasketList
     void makeBasketList ();
     void deleteBasket (int);
     void printBasketList ();
+    void deleteBasketList();
 };
 
 #endif	/* BASKETLIST_H */

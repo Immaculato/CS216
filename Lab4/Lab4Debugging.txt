@@ -10,4 +10,4 @@ Program received signal SIGSEGV, Segmentation fault.
 #2  0x0000000000400fcf in main () at main.cpp:29
 29	   BL_of_bunny.makeBasketList();
 
-An "Invalid write of size 8" is reported by valgrind in at step 5 because the program is attempting to write to and access a NULL pointer. 
+An "Invalid write of size 8" is reported by valgrind at step 5 because the program is attempting to write to and access a basket at a NULL pointer.

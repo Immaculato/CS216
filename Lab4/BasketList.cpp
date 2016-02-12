@@ -74,6 +74,10 @@ void BasketList::insertBasket(int eggs)
 	{
 		prevBasket->nextBasket = newBasketPtr;
 	}
+	else
+	{
+		head = newBasketPtr;
+	}
 }
 
 // create a backet list which contains INITIALBASKETS baskets
@@ -105,6 +109,8 @@ void BasketList::deleteBasket (int eggs)
    if (head->egg_num == eggs)
    {
         head = head->nextBasket;
+	delete delPtr;
+	return;	
    }
    else
    {
@@ -115,12 +121,17 @@ void BasketList::deleteBasket (int eggs)
             prevPtr = delPtr; 
             delPtr = delPtr->nextBasket;
         }
-      
-        prevPtr->nextBasket = delPtr->nextBasket;      
+	//If this possible location matches the user input,
+        if (delPtr->egg_num == eggs)
+	{
+	//make the previous pointer's next basket the deleted pointer's next basket
+       		prevPtr->nextBasket = delPtr->nextBasket;      
+	//Delete the node at the end.
+		delete delPtr;
+	}
    }
 
-   //Delete the node
-   delete delPtr;
+     
 }
 
 
@@ -142,3 +153,14 @@ void BasketList::printBasketList ()
     }
 }
 
+void BasketList::deleteBasketList()
+{
+	Basket* deletePtr = head;
+	Basket* nextPtr = NULL;
+	while (deletePtr != NULL)
+	{
+		nextPtr = deletePtr->nextBasket;
+		delete deletePtr;
+		deletePtr = nextPtr;
+	}
+}

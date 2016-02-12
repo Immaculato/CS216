@@ -69,6 +69,8 @@ int main()
    } while(choice != 'q');
    
    cout<< "Thank you for using this program" << endl;
+   //delete all the allocated memory used
+	BL_of_bunny.deleteBasketList();	
    return 0;
 }
 
