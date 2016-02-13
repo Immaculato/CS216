@@ -31,6 +31,31 @@ void IntSequence::insert(int item)
 	seq = tempArray;
 }
 
+void IntSequence::print()
+{
+	for (int i=0; i<count; i++)
+	{
+		cout << seq[i] << endl;
+	}	
+}
+
+void IntSequence::selection_sort()
+{
+	int minimum;
+	for (int i=0; i<count; i++)
+	{
+		minimum = seq[i];
+		for (int j=i; j<count; j++)
+		{
+			if (seq[j] < minimum)
+			{
+				minimum = seq[j];
+			}
+		}
+		seq[i] = minimum;
+	}
+}
+
 void IntSequence::insertion_sort()
 {
 /*
@@ -96,13 +121,25 @@ end func
 	}
 }
 
-void IntSequence::print()
+void IntSequence::shuffle()
+{
+	cout << "implement this" << endl;
+}
+
+int IntSequence::sequential_search(int key)
 {
 	for (int i=0; i<count; i++)
 	{
-		cout << seq[i] << endl;
-	}	
+		if (key == seq[i])
+		{
+			return i;
+		}
+	}
+	return -1;
 }
+
+
+
 
 IntSequence::~IntSequence()
 {
