@@ -14,6 +14,7 @@ int main()
 	bool breakflag;
 	do
 	{
+	   cout << "=================================================" << endl;
 	   cout << "1. Read\n2. Print\n3. Sort\n4. Shuffle\n5. Search\n6. Quit\nOption: ";
 	   cin >> choice;
 		if (choice == '1')
@@ -37,6 +38,7 @@ int main()
 		}
 		if (choice == '2')
 		{
+		 cout << "Sequence:\t";
 		 listofnumbers.print();
 		}
 		if (choice == '3')

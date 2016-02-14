@@ -43,7 +43,6 @@ void IntSequence::insert(int item)
 
 void IntSequence::print()
 {
-	cout << "Sequence:\t";
 	for (int i=0; i<count; i++)
 	{
 		cout << seq[i] << " ";
@@ -53,7 +52,7 @@ void IntSequence::print()
 
 void IntSequence::selection_sort()
 {
-	cout << "===Selection Sort===================================";
+	cout << "===Selection Sort===================================\n";
 	int minimum;
 	int jmin;
 	for (int i=0; i<count; i++)
@@ -68,7 +67,14 @@ void IntSequence::selection_sort()
 			}
 		
 		}
-		cout << "\nMin " << minimum << ", swap with " << seq[i] << ":\t";
+		if (minimum != seq[i])
+		{
+		cout << "Min " << minimum << ", swap with " << seq[i] << ":\t";
+		}
+		else
+		{
+		cout << "Min " << minimum << ", no swap:\t";
+		}
 		if (jmin != -1)
 		{
 			seq[jmin] = seq[i];
@@ -79,6 +85,8 @@ void IntSequence::selection_sort()
 	
 		
 	}
+	cout << "Sequence:\t\t";
+	print();
 }
 
 void IntSequence::insertion_sort()
@@ -96,6 +104,7 @@ func insertionsort( var A as an array of count n)
 	end for
 end func
 */
+	cout << "===Insertion Sort===================================\n";
 	int key;
 	int position;
 	//for the length of the list,
@@ -116,7 +125,11 @@ end func
 		}
 		//if the correct position is found, put it in and continue.
 		seq[position] = key;
+		cout << "Insert " << seq[position] << ":\t";
+		print();
 	}
+	cout << "Sequence:\t";
+	print();
 }
 
 void IntSequence::bubble_sort()
@@ -131,6 +144,8 @@ func BubbleSort( var a as an array of count n )
 	end for
 end func
 */
+	cout << "===Bubble Sort===================================\n";
+	int counter = 0;
 	for (int i=0; i < count; i++)
 	{
 		for (int j=0; j<count-1; j++)
@@ -141,9 +156,14 @@ end func
 				tempvalue = seq[j];
 				seq[j] = seq[j+1];
 				seq[j+1] = tempvalue;
+				counter+=1;
+				cout << "Iteration " << counter << ":\t";
+				print();
 			}
 		}
 	}
+	cout << "Sequence:\t";
+	print();
 }
 
 void IntSequence::shuffle()
