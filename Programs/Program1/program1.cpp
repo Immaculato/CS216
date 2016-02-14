@@ -34,6 +34,35 @@ int main()
 			}
 			
 		 }
-		} 
+		}
+		if (choice == '2')
+		{
+		 listofnumbers.print();
+		}
+		if (choice == '3')
+		{
+		 cout << "1. Insertion sort\n2. Selection sort\n3. Bubble sort\n4. Quit\nOption: ";
+		 cin >> line;
+		 if (line == "1")
+		 {
+			listofnumbers.insertion_sort();
+		 }
+		 else if (line == "2")
+		 {
+			listofnumbers.selection_sort();
+		 }
+		 else if (line == "3")
+		 {
+			listofnumbers.bubble_sort();
+		 }
+		 else if (line != "4")
+		 {
+			cout << "Invalid option." << endl;
+		 }
+		 else
+		 {
+			continue;
+		 }
+		}
       } while(choice != 'q');		
 }

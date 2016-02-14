@@ -43,10 +43,12 @@ void IntSequence::insert(int item)
 
 void IntSequence::print()
 {
+	cout << "Sequence:\t";
 	for (int i=0; i<count; i++)
 	{
-		cout << seq[i] << endl;
-	}	
+		cout << seq[i] << " ";
+	}
+	cout << endl;	
 }
 
 void IntSequence::selection_sort()
