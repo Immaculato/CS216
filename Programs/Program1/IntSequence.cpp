@@ -53,7 +53,9 @@ void IntSequence::print()
 
 void IntSequence::selection_sort()
 {
+	cout << "===Selection Sort===================================";
 	int minimum;
+	int jmin;
 	for (int i=0; i<count; i++)
 	{
 		minimum = seq[i];
@@ -62,9 +64,20 @@ void IntSequence::selection_sort()
 			if (seq[j] < minimum)
 			{
 				minimum = seq[j];
+				jmin = j;
 			}
+		
 		}
-		seq[i] = minimum;
+		cout << "\nMin " << minimum << ", swap with " << seq[i] << ":\t";
+		if (jmin != -1)
+		{
+			seq[jmin] = seq[i];
+			seq[i]=minimum;
+		}
+		print();
+		jmin = -1;
+	
+		
 	}
 }
 
