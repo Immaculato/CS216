@@ -18,6 +18,16 @@ IntSequence::IntSequence(int in_capacity)
 	count = 0;
 }
 
+int IntSequence::lower()
+{
+	return seq[0];
+}
+
+int IntSequence::higher()
+{
+	return seq[count-1];
+}
+
 void IntSequence::insert(int item)
 {
 	int* tempArray=new int[count+1];
@@ -139,6 +149,31 @@ int IntSequence::sequential_search(int key)
 }
 
 
+int IntSequence::binary_search(int key, int lower, int higher)
+{
+	// test if array is empty
+	if (higher < lower)
+		// set is empty, so return value showing not found
+			return -1;
+	else
+	{
+		// calculate midpoint to cut set in half
+		int middle = ((higher + lower)/2);
+
+		if (seq[middle] > key)				//if the word in the middle is after the word,
+		{
+			return binary_search(key, lower, middle-1);   //make 1 less than the middle the new max, and search again.
+		}
+		else if (seq[middle] < key)			//if the word in the middle is before the word,
+		{
+			return binary_search(key, middle+1, higher);	//make 1 more than the middle the new lower index.
+		}
+		else     //if the word in the middle equals the word,
+		{
+			return middle;  //you've found it!!
+		}
+	}
+}
 
 
 IntSequence::~IntSequence()
