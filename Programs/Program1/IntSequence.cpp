@@ -1,6 +1,11 @@
 #include "IntSequence.h"
 #include <cstdlib>
 #include <iostream>
+#include <iostream>
+#include <algorithm>
+#include <array>
+#include <random>
+#include <chrono>
 
 using namespace std;
 
@@ -16,16 +21,6 @@ IntSequence::IntSequence(int in_capacity)
 	seq = new int[in_capacity];
 	capacity = in_capacity;
 	count = 0;
-}
-
-int IntSequence::lower()
-{
-	return seq[0];
-}
-
-int IntSequence::higher()
-{
-	return seq[count-1];
 }
 
 void IntSequence::insert(int item)
@@ -87,6 +82,31 @@ void IntSequence::selection_sort()
 	}
 	cout << "Sequence:\t\t";
 	print();
+}
+
+void IntSequence::sort()
+{
+	int minimum;
+	int jmin;
+	for (int i=0; i<count; i++)
+	{
+		minimum = seq[i];
+		for (int j=i; j<count; j++)
+		{
+			if (seq[j] < minimum)
+			{
+				minimum = seq[j];
+				jmin = j;
+			}
+		
+		}
+		if (jmin != -1)
+		{
+			seq[jmin] = seq[i];
+			seq[i]=minimum;
+		}
+		jmin = -1;
+	}
 }
 
 void IntSequence::insertion_sort()
@@ -168,46 +188,93 @@ end func
 
 void IntSequence::shuffle()
 {
-	cout << "implement this" << endl;
+	srand(time(0));
+	for (int i = 0; i < count; i++)
+    	{
+        	// Pick a random index from 0 to i
+        	int j = rand() % (i+1);
+ 
+        	// Swap arr[i] with the element at random index
+        	swap(seq[i], seq[j]);
+    	}
 }
 
-int IntSequence::sequential_search(int key)
+void IntSequence::sequential_search(int key)
 {
-	for (int i=0; i<count; i++)
+	bool found = false;
+	int location;
+	int i=0;
+	while (found == false && i < count)
 	{
 		if (key == seq[i])
 		{
-			return i;
+			location = i;
+			found = true;
 		}
+		i++;
 	}
-	return -1;
+	if (found)
+	{
+		cout << "Key found at index " << location << endl;
+		
+	}
+	else
+	{
+		cout << "Key not found." << endl;
+	}
+	cout << "Search with " << i << " comparison(s)." << endl;
 }
 
 
-int IntSequence::binary_search(int key, int lower, int higher)
+void IntSequence::binary_search(int key)
 {
-	// test if array is empty
+	int higher = count-1;
+	int lower = 0;
+	int middle;
+	int location;
+	int counter = 0;
+	bool isitdone = false;
+	while (isitdone == false)
+	{
 	if (higher < lower)
+	{
 		// set is empty, so return value showing not found
-			return -1;
+		isitdone = true;
+		location = -1;
+	}		
 	else
 	{
 		// calculate midpoint to cut set in half
-		int middle = ((higher + lower)/2);
+		middle = ((higher + lower)/2);
 
 		if (seq[middle] > key)				//if the word in the middle is after the word,
 		{
-			return binary_search(key, lower, middle-1);   //make 1 less than the middle the new max, and search again.
+			//return binary_search(key, lower, middle-1);   //make 1 less than the middle the new max, and search again.
+			higher = middle-1;
 		}
 		else if (seq[middle] < key)			//if the word in the middle is before the word,
 		{
-			return binary_search(key, middle+1, higher);	//make 1 more than the middle the new lower index.
+			//return binary_search(key, middle+1, higher);	//make 1 more than the middle the new lower index.
+			lower = middle+1;
 		}
 		else     //if the word in the middle equals the word,
 		{
-			return middle;  //you've found it!!
+			location = middle;
+			isitdone = true;  //you've found it!!
 		}
 	}
+	counter+=1;
+	}
+	if (location != -1)
+	{
+		cout << "Key found at index " << location << endl;
+	
+	}
+	else
+	{
+		cout << "Key not found." << endl;
+	}
+	cout << "Search with " << counter << " comparison(s)." << endl;
 }
 
 

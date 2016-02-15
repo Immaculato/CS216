@@ -11,10 +11,6 @@ class IntSequence
 	// create an iteger array with capacity = in_capacity
 	IntSequence(int in_capacity);
 
-	//accessors for lowest and highest values in the array
-	int lower();
-	int higher();
-
 	// insert item into the end of the array; count increased by 1
 	void insert(int item);	
 
@@ -24,6 +20,9 @@ class IntSequence
 	// sort the sequence into non-decreasing order
 	// using Selection Sorting algorithm
 	void selection_sort();
+
+	// this sort is identical to selection sort, but has no printing to std output.
+	void sort();
  
 	// sort the sequence into non-decreasing order
 	// using Insertion Sorting algorithm
@@ -38,13 +37,13 @@ class IntSequence
 	void shuffle();
 
 	// search a target key in the array: 
-	// if found return the index number; if not found return -1
-	int sequential_search(int key);	
+	// if found print the index to std output
+	void sequential_search(int key);	
 
 	// sort the array into non-decreasing order first, then
 	// search a target key in the array: 
-	// if found return the index number; if not found return -1
-	int binary_search(int key, int lower, int higher);	
+	// if found print the index to std output
+	void binary_search(int key);	
 
 	// destructor
 	~IntSequence();

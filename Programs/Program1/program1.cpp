@@ -1,6 +1,11 @@
 #include "IntSequence.cpp"
 #include <cstdlib>
 #include <string>
+#include <iostream>
+#include <algorithm>   
+#include <array>        
+#include <random>       
+#include <chrono>
 
 using namespace std;
 
@@ -36,12 +41,12 @@ int main()
 			
 		 }
 		}
-		if (choice == '2')
+		else if (choice == '2')
 		{
 		 cout << "Sequence:\t";
 		 listofnumbers.print();
 		}
-		if (choice == '3')
+		else if (choice == '3')
 		{
 		 cout << "1. Insertion sort\n2. Selection sort\n3. Bubble sort\n4. Quit\nOption: ";
 		 cin >> line;
@@ -66,5 +71,50 @@ int main()
 			continue;
 		 }
 		}
-      } while(choice != 'q');		
+		else if (choice == '4')
+		{
+		 listofnumbers.shuffle();
+		 cout << "Shuffled sequence:\t";
+		 listofnumbers.print();
+		}
+		else if (choice == '5')
+		{
+		 cout << "1. Sequential search\n2. Binary search \n3. Quit\nOption: ";
+		 cin >> line;
+		 if (line == "1")
+		 {
+			cout << "Enter the key to find: ";
+			int key;
+			cin >> key;
+		 	listofnumbers.sequential_search(key);
+		 }
+		 else if (line == "2")
+		 {
+			cout << "Enter the key to find: ";
+                        int key;
+                        cin >> key;
+			cout << "Unsorted sequence: ";
+			listofnumbers.print();
+			cout << "Sorted sequence: ";
+			listofnumbers.sort();
+			listofnumbers.print();
+			listofnumbers.binary_search(key);
+		 }
+		 else if (line != "3")
+		 {
+			cout << "Invalid option." << endl;
+		 }
+		 else
+		 {
+			continue;
+		 }
+		}
+		else if (choice != '6')
+		{
+			cout << "Invalid input." << endl;
+		}
+
+      } while(choice != '6');
+	cout << "Thank you for using this program." << endl;
+	cout << "=================================================" << endl;		
 }
