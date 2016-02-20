@@ -49,6 +49,10 @@ void sortings::insert(string item)
 			tempArray[i+1] = sequence[i];
 		}
         }
+	if (found == false)
+	{
+		tempArray[size] = item;
+	}
 	delete[] sequence;
         size+=1;
 	capacity=size;
@@ -60,11 +64,11 @@ void sortings::print()
 	cout << "Items in the array:" << endl;
 	for (int i=0; i<size; i++)
 	{
-		cout << sequence[i];
+		cout << sequence[i] << endl;
 	}
 }
 
 sortings::~sortings()
 {
-	delete sequence;
+	delete[] sequence;
 }
