@@ -1,0 +1,1000 @@
+cd..
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd CS216/
+git add --all
+git commit -m "started on program"
+git push origin master
+exit
+ls
+cd CS216/
+ls
+cd Programs/
+ls
+cd Program1/
+ls
+vi IntSequence.h 
+exit
+ls
+cd CS216/
+ls
+cd Lab4/
+ls
+exit
+clear
+ls
+cd CS216/
+ls
+mkdir Lab4
+cd Lab4
+ls
+curl http://www.cs.uky.edu/~yipike/CS216S16/lab4source.zip
+curl http://www.cs.uky.edu/~yipike/CS216S16/labclear
+curl http://www.cs.uky.edu/~yipike/CS216S16/labclear > ./lab4source.zip
+ls
+unzip lab4source.zip 
+rm lab4source.zip 
+curl http://www.cs.uky.edu/~yipike/CS216S16/lab4source.zip > ./lab4source.zip
+ls
+unzip lab4source.zip 
+g++ -g –o Lab4 main.cpp BasketList.cpp
+ls
+g++ -g –o Lab4 main.cpp BasketList.cpp
+history | grep g++
+ls
+g++ -o Lab4 main.cpp BasketList.cpp
+g++ -g -o Lab4 main.cpp BasketList.cpp
+ls
+rm Lab4 
+g++ -g -o Lab4 main.cpp BasketList.cpp
+./Lab4 
+valgrind ./Lab4
+vi BasketList.cpp
+gdb Lab4
+clear
+gdb Lab4
+ls
+vi BasketList.h
+ls
+gdb Lab4
+clear
+gdb Lab4
+ls
+clear
+vi BasketList.cpp
+gdb Lab4
+ls
+touch Lab4Debugging.txt
+vi Lab4Debugging.txt 
+ls
+gdb Lab4
+clear
+gdb Lab4
+vi Lab4Debugging.txt 
+gdb Lab4
+vi Lab4Debugging.txt 
+valgrind ./Lab4
+vi Lab4Debugging.txt 
+ls
+cd ..
+ls
+git add --all "Lab4 unfinished"
+git add --all
+git commit -m "Lab4 unfinished"
+ls
+cd Programs/
+ls
+cd Program1/
+ls
+cd ..
+ls
+cd ..
+ls
+git push origin master
+exit
+ls
+cd CS216/
+cd Lab4/
+ls
+vi BasketList.h
+ls
+cd ..
+ls
+cd Programs/
+ls
+exit
+clear
+ls
+cd CS216/
+ls
+cd Lab4
+ls
+vi BasketList.cpp
+history | grep g++
+g++ -g -o Lab4 main.cpp BasketList.cpp
+ls
+vi BasketList.cpp
+g++ -g -o Lab4 main.cpp BasketList.cpp
+vi BasketList.cpp
+g++ -g -o Lab4 main.cpp BasketList.cpp
+ls
+./Lab4
+ls
+exit
+clear
+cd CS216/
+cd Lab4/
+ls
+vi BasketList.h
+ls
+vi main.cpp
+exit
+clear
+ls
+exit
+ls
+cd CS216/
+ls
+cd Lab4
+ls
+vi BasketList.h
+exit
+ls
+cd CS216/
+ls
+cd Lab4/
+ls
+vi BasketList.
+vi BasketList.cpp 
+g++ -g -o Lab4 main.cpp BasketList.cpp
+ls
+vi BasketList.cpp 
+g++ -g -o Lab4 main.cpp BasketList.cpp
+vi BasketList.cpp 
+g++ -g -o Lab4 main.cpp BasketList.cpp
+vi BasketList.cpp 
+g++ -g -o Lab4 main.cpp BasketList.cpp
+./Lab4 
+vi BasketList.cpp 
+g++ -g -o Lab4 main.cpp BasketList.cpp
+ls
+./ Lab4
+./Lab4
+gdb Lab4
+gdb Lab4 
+ls
+vi BasketList.cpp
+g++ -g -o Lab4 main.cpp BasketList.cpp
+./Lab4
+vi BasketList.cpp
+g++ -g -o Lab4 main.cpp BasketList.cpp
+ls
+./Lab4
+ls
+cd ..
+ls
+cd ..
+ls
+cd CS216/
+git add --all
+git commit -m "lab 4 is sorta working... need to fix small egg inputs"
+git push origin master
+clear
+ls
+cd CS216/
+ls
+cd Lab2/
+ls
+cat myreverse.cpp
+exit
+ls
+cd CS216/
+cd Lab4
+ls
+vi BasketList.h
+ls
+vi main.cpp 
+vi BasketList.cpp
+vi BasketList.h
+exit
+ls
+cd CS216/
+cd Lab4/
+ls
+./Lab4
+ls
+vi BasketList.cpp
+g++ -g -o Lab4 main.cpp BasketList.cpp
+ls
+./Lab4
+vi BasketList.cpp
+ls
+./Lab4
+vi Basketlist.cpp
+ls
+vi BasketList.cpp
+g++ -g -o Lab4 main.cpp BasketList.cpp
+./Lab4
+vi BasketList.cpp
+g++ -g -o Lab4 main.cpp BasketList.cpp
+./Lab4
+ls
+vi BasketList.cpp
+ls
+g++ -g -o Lab4 main.cpp BasketList.cpp
+./Lab4
+ls
+vi BasketList.cpp
+g++ -g -o Lab4 main.cpp BasketList.cpp
+./Lab4
+valgrind Lab4
+history | grep valgrind
+valgrind ./Lab4
+ls
+vi BasketList.cpp
+g++ -g -o Lab4 main.cpp BasketList.cpp
+./Lab4
+valgrind ./Lab4
+ls
+vi BasketList.cpp 
+g++ -g -o Lab4 main.cpp BasketList.cpp
+./Lab4
+valgrind ./Lab4
+ls
+./Lab4
+ls
+vi BasketList.cpp 
+g++ -g -o Lab4 main.cpp BasketList.cpp
+valgrind ./Lab4
+ls
+vi main.cpp
+ls
+vi BasketList.h
+vs BasketList.cpp
+vi BasketList.cpp 
+ls
+vi BasketList.cpp
+vi main.cpp
+g++ -g -o Lab4 main.cpp BasketList.cpp
+./Lab4 
+valgrind ./Lab4
+ls
+valgrind ./Lab4
+ls
+vi BasketList.cpp
+g++ -g -o Lab4 main.cpp BasketList.cpp
+valgrind ./Lab4
+ls
+cd ..
+ls
+cd ..
+ls
+cd CS216/
+git add --all
+cd Lab4/
+ls
+cat Lab4Debugging.txt 
+vi Lab4Debugging.txt 
+ls
+./Lab4
+valgrind ./Lab4
+ls
+cd ..
+ls
+git add --all
+git commit -m "lab 4 completed!"
+git push origin master
+ls
+cd Lab4/
+ls
+zip Lab4.zip Lab4Debugging.txt *.cpp *.h
+vi BasketList.cpp
+exit
+cd CS216/
+cd Programs/
+cd Program1/
+clear
+ls
+vi IntSequence.
+vi IntSequence.h
+ls -a
+rm .IntSequence.cpp.swp
+rm .IntSequence.h.swp 
+ls
+vi IntSequence.h
+ls
+vi IntSequence.h
+ls
+exit
+ls
+cd CS216/
+cd Programs/
+cd Program1/
+ls
+clear
+ls
+vi IntSequence.cpp 
+ls
+vi program1.cpp 
+g++ -o IntSequence.cpp program1.cpp
+vi program1.cpp 
+vi IntSequence.cpp 
+vi IntSequence.h
+ls
+ls -a
+history | grep g++
+g++ -o Program1 program1.cpp IntSequence.cpp
+ls
+vi IntSequence.cpp
+g++ -o Program1 program1.cpp IntSequence.cpp
+vi IntSequence.cpp
+g++ -o Program1 program1.cpp IntSequence.cpp
+clear
+g++ -o Program1 program1.cpp IntSequence.cpp
+vi IntSequence.cpp
+g++ -o Program1 program1.cpp IntSequence.cpp
+vi IntSequence.cpp
+g++ -o Program1 program1.cpp IntSequence.cpp
+vi IntSequence.cpp
+g++ -o Program1 program1.cpp IntSequence.cpp
+ls
+vi program1.cpp 
+g++ -o Program1 program1.cpp IntSequence.cpp
+vi program1.cpp 
+g++ -o Program1 program1.cpp IntSequence.cpp
+la
+ls
+ls -a
+rm .IntSequence.h.swp 
+g++ -o Program1 program1.cpp IntSequence.cpp
+ls
+vi program1.cpp 
+ls
+vi IntSequence.h
+vi IntSequence.cpp 
+g++ -o Program1 program1.cpp IntSequence.cpp
+ls
+la
+vi IntSequence.h
+ls
+vi IntSequence.cpp
+clear
+g++ -o Program1 program1.cpp
+ls
+./Program1 
+cd ..
+cd Program1/
+ls
+la
+cd ..
+ls
+cd ..
+ls
+git add --all
+git commit -m "Program 1 compiles, at least"
+git push origin master
+ls
+exit
+ls
+cd CS216/
+cd Programs/
+cd Program1/
+ls
+clear
+ls
+vi IntSequence.h
+clear
+ls
+cd CS216/
+ls
+cd Programs/
+ls
+cd Program1/
+ls
+clear
+ls
+vi IntSequence.cpp
+ls
+cd CS216/
+ls
+cd Programs/
+ls
+cd Program1/
+ls
+history | grep g++
+g++ -g -o Program1 program1.cpp
+ls
+gdb ./Program1 
+ls
+vi program1.cpp 
+vi IntSequence.cpp
+g++ -g -o Program1 program1.cpp
+vi IntSequence.cpp
+ls
+cd ..
+ls
+cd ..
+ls
+git add --all
+git commit -m "need to implement binary search"
+git push origin master
+exit
+ls
+cd CS216/
+ls
+cd Programs/
+cd Program1/
+ls
+vi IntSequence.h
+exit
+ls
+cd CS216/
+cd Programs/
+cd Program1/
+ls
+clear
+ls
+vi IntSequence.cpp 
+ls
+cd ..
+ls
+exit
+clear
+ls
+cd CS216/
+cd Programs/
+cd Program1/
+ls
+cat wordlist.cpp
+ls
+vi IntSequence.cpp
+ls
+cd ..
+ls
+exit
+ls
+cd CS216/
+cd Programs/
+cd Program1/
+ls
+vi program1.cpp 
+cd ..
+ls
+cd ..
+ls
+cd Programs/
+ls
+cd Program1/
+ls
+vi IntSequence.h
+exit
+ls
+cd CS216/
+ls
+cd Programs/
+ls
+cd Program1/
+ls
+vi IntSequence.cpp 
+ls
+vi IntSequence.h
+ls
+int IntSequence.cpp 
+vi IntSequence.cpp
+g++ -g -o Program1 program1.cpp
+vi IntSequence.cpp 
+g++ -g -o Program1 program1.cpp
+ls
+./Program1 
+vi program1.cpp
+ls
+cd ..
+ls
+cd ..
+ls
+cd Lab4
+ls
+vi main.cpp
+cd ..
+ls
+cd Programs/
+cd Program1/
+ls
+vi program1.cpp 
+ls
+cd ..
+ls
+cd ..
+ls
+cd Lab4
+ls
+cd ..
+ls
+cd Lab3/
+ls
+cat lab3.cpp
+ls
+cat sortings.cpp
+ls
+cd ..
+ls
+cd Lab2/
+ls
+cat myrev.cpp
+ls
+cat myreverse.cpp
+ls
+cd ..
+ls
+cd Programs/
+cd Program1/
+ls
+vi program1.cpp 
+g++ -g -o Program1 program1.cpp
+vi program1.cpp 
+g++ -g -o Program1 program1.cpp
+vi program1.cpp 
+g++ -g -o Program1 program1.cpp
+vi program1.cpp 
+g++ -g -o Program1 program1.cpp
+vi program1.cpp 
+g++ -g -o Program1 program1.cpp
+vi program1.cpp 
+g++ -g -o Program1 program1.cpp
+clear
+g++ -g -o Program1 program1.cpp
+vi program1.cpp 
+g++ -g -o Program1 program1.cpp
+vi program1.cpp 
+g++ -g -o Program1 program1.cpp
+vi program1.cpp 
+vi program1.cpp 
+g++ -g -o Program1 program1.cpp
+vi program1.cpp 
+g++ -g -o Program1 program1.cpp
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+ls
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi program1.cpp 
+./Program1 
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+ls
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+clear
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+clear
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi program1.cpp 
+clear
+g++ -std=c++11 -g -o Program1 program1.cp
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+ls
+./Program1 
+cd ..
+ls
+cd ..
+ls
+git add --all
+git commit -m "getting somewhere - reading stuff"
+git push origin master
+ls
+cd Programs/
+cd Program1/
+ls
+la
+cd ..
+ls
+cd ..
+ls
+cd Programs/
+ls
+cd Program1/
+ls
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+ls
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+ls
+vi program1.cpp 
+vi IntSequence.cpp
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+vi IntSequence.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+cd ..
+ls
+cd ..
+ls
+git add --all
+git commit -m "getting closer! read print sort are in"
+git push origin master
+exit
+cd CS216/
+cd Programs/
+cd Program1/
+ls
+clear
+ls
+vi IntSequence.h
+exit
+cd Pro
+cd CS216/
+cd Programs/
+cd Program1/
+ls
+clear
+ls
+vi program1.cpp 
+vi IntSequence.cpp
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi IntSequence.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+ls
+vi IntSequence.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+vi IntSequence.cpp
+./Program1 
+ls
+vi IntSequence.cpp
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+ls
+vi program1.cpp 
+ls
+vi IntSequence.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1
+ls
+vi IntSequence.cpp 
+./Program1
+ls
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+ls
+vi IntSequence.cpp
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+vi IntSequence.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+ls
+cd ..
+ls
+cd ..
+ls
+git add --all
+git commit -m "selection sort implemented"
+git push origin master
+exit
+clear
+cd CS216/
+cd Programs/
+cd Program1/
+ls
+vi program1.cpp 
+vi IntSequence.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1
+l
+vi IntSequence.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+vi program1.cpp 
+l
+ls
+vi IntSequence.cpp
+vi IntSequence.
+vi IntSequence.cpp
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi IntSequence.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+vi program1.cpp 
+ls
+vi IntSequence.cpp 
+./Program1 
+ls
+vi IntSequence.cpp
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1
+ls
+vi IntSequence.cpp
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+ls
+vi IntSequence.cpp
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi IntSequence.cpp
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+vi IntSequence.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+ls
+vi IntSequence.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+ls
+vi IntSequence.cpp
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+vi IntSequence.cpp
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+ls
+cd ..
+ls
+cd ..
+ls
+git add --all
+git commit -m "all sorting options working correctly!"
+git push origin master
+exit
+s
+ls
+cd CS216/
+ls
+cd Programs/
+cd Program1/
+ls
+./Program1 
+ls
+vi program1.cpp 
+ls
+vi IntSequence.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi IntSequence.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi IntSequence.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi IntSequence.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi IntSequence.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi program1.cpp
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+ls
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+exit
+ls
+cd CS216/
+ls
+cd Lab4
+ls
+vi BasketList.cpp 
+exit
+clear
+cd CS216/
+cd Programs/
+cd Program1/
+ls
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi program1.cpp 
+ls
+vi IntSequence.h
+int IntSequence.cpp
+vi IntSequence.cpp 
+vi IntSequence.h
+ls
+vi IntSequence.cpp
+vi program1.cpp 
+ls
+vi IntSequence.h
+vi IntSequence.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi IntSequence.h
+ls
+la
+ls -a
+vi IntSequence.h
+vi IntSequence.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi IntSequence.cpp 
+vi IntSequence.h 
+ls
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi IntSequence.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+ls
+vi program1.cpp 
+vi IntSequence.cpp
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi IntSequence.cpp
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+ls
+vi IntSequence.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+ls
+vi IntSequence.cpp 
+vi IntSequence.h
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi IntSequence.cpp 
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+vi IntSequence.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+vi IntSequence.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+cd ..
+ls
+cd ..
+ls
+git commit --all
+git add --all
+git commit -m "program 1 completely working! need to comment"
+git push origin master
+ls
+cd  Programs/
+ls
+cd Program1/
+ls
+./Program1 
+ls
+vi IntSequence.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+vi IntSequence.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+ls
+vi IntSequence.cpp 
+ls
+vi IntSequence.h
+vi program1.cpp 
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+ls
+cat program1.cpp 
+ls
+cat IntSequence.cpp 
+ls
+cat IntSequence.h
+ls
+cat wordlist.cpp 
+ls
+rm wordlist.cpp 
+ls
+zip CS216PA1.zip program1.cpp IntSequence.*
+ls
+cd ..
+ls
+cd ..
+ls
+git add --all
+git commit -m "program 1 final version!"
+git push origin master
+exit
+ls
+cd CS216/
+ls
+cd Programs/
+ls
+cd Program1/
+ls
+clear
+vi IntSequence.h
+exit
+l
+;s
+LS
+ls
+cd CS216/
+ls
+cd Programs/
+cd
+ls
+cd CS216/
+ls
+cd Programs/
+ls
+cd Program1/
+ls
+exit
+ls
+cd CS216/
+cd Programs/
+cd Program1/
+ls
+g++ -std=c++11 -g -o Program1 program1.cpp
+./Program1 
+clear
+exit
+ls
+cd CS216/
+cd Programs/
+cd Program1/
+ls
+valgrind ./Program1
+valgrind -v ./Program1
+clear
+exit
+clear
+ls
+cd CS216/
+ls
+mkdir Lab5
+cd Lab
+cd Lab5
+ls
+curl -L https://www.dropbox.com/s/7rcn0hylen9vorw/lab5source.zip?dl=0 > lab5source.zip
+ls
+unzip lab5source.zip 
+ls
+touch Lab5Script
+ls
+vi Lab5Script 
+ls
+cat Lab5Script 
+chmod u+x Lab5Script 
+./Lab5Script 
+export PATH=$PATH:~/CS216/Lab5
+echo $PATH
+ls
+Lab5Script 
+clear
+Lab5Script 
+cd ..
+ls
+Lab5Script
+c;ear
+clear
+ls
+cd Lab5
+ls
+history | cut –b8- > lab5input.txt
+history | cut -b8- > lab5input.txt
