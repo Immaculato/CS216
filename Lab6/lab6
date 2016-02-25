@@ -37,12 +37,14 @@ output_file3="ID_output"
 #generate output file named ID_output for option=3
 #no output file is generated when option is not valid
 case $usr_option in
-	2) cut -d$'\t' -f1 $1 | sort -r > $output_file1
-           echo "Your choice is: "$usr_option". Please check the output file: $output_file2" ;;
-	1) cut -d',' -f2 $1 | sort > $output_file2
-	   echo "Your choice is: "$usr_option". Please check the output file: $output_file1" ;;
-	3) echo "else choice";;
+	1) sort -t "," -k 2 $1 > $output_file1
+           echo "Your choice is: "$usr_option". Please check the output file: $output_file1" ;;
+	2) sort -r $1 > $output_file2
+	   echo "Your choice is: "$usr_option". Please check the output file: $output_file2" ;;
+	3) sort -n -k 2 $1 > $output_file3
+	   echo "Your choice is: "$usr_option". Please check the output file: $output_file3" ;;
+	*) echo "Invalid option."
+	   exit 2 ;;
 esac
 
-  
-
+exit 0
