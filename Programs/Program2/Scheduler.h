@@ -12,15 +12,13 @@ public:
  Scheduler();  // default constructor
  Scheduler(int ini_teams);  // constructor
 // generate the schedule for the number of team = teams
- void generateSchedule(); 
+ void generateSchedule(int remainingteams); 
  // display the table content of the schedule for each team
  void print();
- // destructor
- ~Scheduler(); 
 // more member functions here ...     
 private:
  int teams;    // the number of teams to be scheduled 
- vector<vector<int>> Arrange;    // the two dimensional vector to represent the 
+ vector< vector<int> > Arrange;    // the two dimensional vector to represent the 
 				  //scheduling table for each team
 };
 

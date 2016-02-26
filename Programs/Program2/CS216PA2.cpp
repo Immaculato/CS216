@@ -34,8 +34,9 @@ int main()
 			cout << "The number of teams is not a power of two!" << endl;
 			continue;
 		}
-		break;
 		Scheduler teamschedule(numberteams);
+		teamschedule.generateSchedule(numberteams);
+		teamschedule.print();
 	}
 	while (true);
 }
