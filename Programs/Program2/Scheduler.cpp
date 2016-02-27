@@ -29,32 +29,49 @@ Scheduler::Scheduler()
 
 Scheduler::Scheduler(int ini_teams)
 {
-	teams = ini_teams;
-	for (int j=0; j<ini_teams; j++)
-	{	
-		Arrange.push_back(new vector<int>);
-		for (int i=0; i<ini_teams; i++)
-		{
-			Arrange[j].push_back(i);
-		}
+	Arrange = new int*[ini_teams];
+	for (int i=0; i<ini_teams; i++)
+	{
+		Arrange[i] = new int[ini_teams];
 	}
+	teams = ini_teams;
 	//this basically just makes a grid with garbage values, so that they
 	//can be easily changed and manipulated in any order later.
 }
 
-void Scheduler::generateSchedule(int remainingteams)
+void Scheduler::generateSchedule(int stepnumber) //stepnumber ~ current 2^m term
 {
-	for (int i=remainingteams; i>0; i--)
+	if (stepnumber == teams)
 	{
-		Arrange[remainingteams][i];
-		Arrange[i][remainingteams];
-	}
-	remainingteams--;
-	if (remainingteams > 0)
+		return;
+	}	
+	else if (stepnumber != 0)
 	{
-		generateSchedule(remainingteams);
+		for (int i=0; i<stepnumber; i++)
+		{
+			for (int j=0; j<stepnumber; j++)
+			{
+				Arrange[i][j+stepnumber] = (Arrange[i][j] + stepnumber);
+				Arrange[i+stepnumber][j] = (Arrange[i][j] + stepnumber);
+				Arrange[i+stepnumber][j+stepnumber] = Arrange[i][j];
+			}
+		}
 	}
+	else
+	{
+		Arrange[0][0] = 1;
+	}
+	if (stepnumber==0)
+	{
+		stepnumber = 1;
+	}
+	else
+	{
+		stepnumber = stepnumber*2;
+	}
+	generateSchedule(stepnumber);
 }
+
 
 void Scheduler::print()
 {
@@ -67,3 +84,13 @@ void Scheduler::print()
 		cout << endl;
 	}
 }
+
+Scheduler::~Scheduler()
+{
+	for (int i=0; i<teams; i++)
+	{
+		delete Arrange[i];
+	}
+	delete[] Arrange;
+}
+

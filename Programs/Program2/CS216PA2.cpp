@@ -35,7 +35,7 @@ int main()
 			continue;
 		}
 		Scheduler teamschedule(numberteams);
-		teamschedule.generateSchedule(numberteams);
+		teamschedule.generateSchedule(0);
 		teamschedule.print();
 	}
 	while (true);

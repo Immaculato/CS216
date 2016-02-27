@@ -15,10 +15,12 @@ public:
  void generateSchedule(int remainingteams); 
  // display the table content of the schedule for each team
  void print();
+ ~Scheduler(); //destructor
 // more member functions here ...     
 private:
  int teams;    // the number of teams to be scheduled 
- vector< vector<int> > Arrange;    // the two dimensional vector to represent the 
+ int** Arrange;
+                 // array to represent the scheduling table for each team    // the two dimensional vector to represent the 
 				  //scheduling table for each team
 };
 
