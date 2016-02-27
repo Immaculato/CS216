@@ -11,17 +11,16 @@ class Scheduler{
 public:
  Scheduler();  // default constructor
  Scheduler(int ini_teams);  // constructor
-// generate the schedule for the number of team = teams
+// generate the schedule for the number of teams. call with 0.
  void generateSchedule(int remainingteams); 
  // display the table content of the schedule for each team
  void print();
- ~Scheduler(); //destructor
-// more member functions here ...     
+ ~Scheduler(); //destructor 
 private:
  int teams;    // the number of teams to be scheduled 
  int** Arrange;
-                 // array to represent the scheduling table for each team    // the two dimensional vector to represent the 
-				  //scheduling table for each team
+ // array to represent the scheduling table for each team    
+
 };
 
 #endif
