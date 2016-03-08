@@ -1,3 +1,10 @@
+/*
+Program 2 - Scheduler implementation
+Tristan Basil
+University of Kentucky
+Stu. ID: 12008804
+*/
+
 #include "Scheduler.h"
 #include <iostream>
 #include <vector>

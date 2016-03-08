@@ -1,5 +1,13 @@
+/*
+Program 2 - Main function
+Tristan Basil
+University of Kentucky
+Stu. ID: 12008804
+*/
+
 #include "Scheduler.cpp"
 #include <iostream>
+#include <sstream>
 #include <string>
 #include <stdexcept>
 #include <vector>
@@ -17,6 +25,7 @@ int main()
 		cout << "Please enter the number of teams to be scheduled";
 		cout << " (q or Q to quit): ";
 		cin >> userinput;
+		istringstream iss(userinput); 
 		//if they input q or Q,
 		if (userinput == "Q" | userinput == "q")
 		{
@@ -25,12 +34,9 @@ int main()
 			return 0;
 		}
 		//if they input anything else, attempt to convert it to an integer.
-		try
-		{
-			numberteams = stoi(userinput);
-		}
+		iss >> numberteams;
 		//if it couldn't be converted to an integer:
-		catch (invalid_argument &a)
+		if (iss.fail())
 		{
 			//tell them it couldn't be converted, and re-run the loop.
 			cout << "Invalid number!" << endl;
