@@ -1,0 +1,19 @@
+	The primary difference between Lab8_0 and the others 
+is that it does not throw an error when it sees a divide by 
+zero (the 'if' statement was removed that handled throwing 
+the error), meaning that when a number is divided by zero, it 
+returns 'inf' to indicate infinity. 
+	Lab8_1 does use the if statement, meaning that if
+a number is divided by zero, an exception will be thrown.
+However, there is no catch statement to handle the exception,
+meaning that as soon it is thrown, the program crashes because
+the exception is unhandled.
+	Lab8_2 is similar to Lab8_1 in that it uses the if
+statement, but also uses a try and catch block to execute the
+divide. When the divide throws a 'DivideByZero' exception, 
+the catch statement that follows catches the exception, handles
+it, and the final value of d remains zero as the try block failed.
+	Lab8_3 is almost identical to Lab8_2 except that it
+throws a 'Matherr' instead of a divide by zero error. This means
+that the exception is caught from the base class Matherr, and its
+corresponding errorname is displayed instead.	
